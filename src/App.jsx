@@ -2,7 +2,7 @@
 // import Footer from "./components/Footer.jsx"
 // import MainContent from "./components/MainContent.jsx"
 import Product from "./components/Product.jsx"
-
+import CurrDate from "./components/CurrDate.jsx";
 
 const App = () =>{
   return (
@@ -11,6 +11,8 @@ const App = () =>{
     <MainContent />
     <Footer /> */}
     <Product />
+    <CurrDate />
+
     
 
 </>
