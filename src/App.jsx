@@ -4,33 +4,30 @@
 // import Product from "./components/Product.jsx"
 // import CurrDate from "./components/CurrDate.jsx";
 // import RenderList from "./RenderList.jsx";
-import {Card} from "./components/Card.jsx"
+// import {Card} from "./components/Card.jsx"
+import { Weather } from "./components/Weather.jsx";
 
-const App = () =>{
+const App = () => {
   return (
-  <>
-    {/* <Header />
+    <>
+      <Weather temperature={15}/>
+
+      {/* <Header />
     <MainContent />
     <Footer /> 
     <Product eType="pc" />
     <CurrDate />
     <RenderList /> */}
-    <Card>
+      {/* <Card>
       <h1>Hello 1</h1>
       <p>This is from card component</p>
     </Card>
     <Card>
       <h1>Hello 2</h1>
       <p>This is from card component</p>
-    </Card>
-
-
-    
-
-</>
-
-  )
-
-}
+    </Card> */}
+    </>
+  );
+};
 
 export default App;
