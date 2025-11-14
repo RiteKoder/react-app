@@ -7,7 +7,8 @@ function UseState1() {
     setCounter(counter + 1);
   };
   const minusHandler = () => {
-    setCounter(counter - 1);
+    counter > 0 && setCounter(counter - 1); // also handles negative numbers
+    
   };
 
   return (
