@@ -1,3 +1,6 @@
+import { RxFontRoman } from "react-icons/rx";
+import "./index.css";
+
 // import Header  from "./components/Header.jsx"
 // import Footer from "./components/Footer.jsx"
 // import MainContent from "./components/MainContent.jsx"
@@ -5,12 +8,24 @@
 // import CurrDate from "./components/CurrDate.jsx";
 // import RenderList from "./RenderList.jsx";
 // import {Card} from "./components/Card.jsx"
-import { Weather } from "./components/Weather.jsx";
-
+// import { Weather } from "./components/Weather.jsx";
+// import Icons from "./components/Icons";
+// import RainbowText from "./components/RainbowText";
+import UseState1 from "./components/UseState1";
 const App = () => {
   return (
     <>
-      <Weather temperature={15}/>
+      <UseState1 />
+
+
+
+
+    
+    {/* <RainbowText /> */}
+
+      {/* <Icons /> */}
+
+      {/* <Weather temperature={15}/> */}
 
       {/* <Header />
     <MainContent />
