@@ -1,5 +1,6 @@
 import { RxFontRoman } from "react-icons/rx";
 import "./index.css";
+import ArrayDestruct from "./components/ArrayDestruct";
 
 // import Header  from "./components/Header.jsx"
 // import Footer from "./components/Footer.jsx"
@@ -11,36 +12,34 @@ import "./index.css";
 // import { Weather } from "./components/Weather.jsx";
 // import Icons from "./components/Icons";
 // import RainbowText from "./components/RainbowText";
-import UseState1 from "./components/UseState1";
+// import Card1 from "./components/UseState1";
+
 const App = () => {
   return (
     <>
-      <UseState1 />
+    <ArrayDestruct />
 
 
-
-
-    
-    {/* <RainbowText /> */}
-
+      
+      {/* <Card1 /> */}
+      {/* <RainbowText /> */}
       {/* <Icons /> */}
-
       {/* <Weather temperature={15}/> */}
-
-      {/* <Header />
-    <MainContent />
-    <Footer /> 
-    <Product eType="pc" />
-    <CurrDate />
-    <RenderList /> */}
+      {/* <Header /> */}
+      {/* <MainContent /> */}
+      {/* <Footer />  */}
+      {/* <Product eType="pc" /> */}
+      {/* <CurrDate /> */}
+      {/* <RenderList /> */}
       {/* <Card>
       <h1>Hello 1</h1>
       <p>This is from card component</p>
-    </Card>
-    <Card>
+      </Card>
+      <Card>
       <h1>Hello 2</h1>
       <p>This is from card component</p>
     </Card> */}
+
     </>
   );
 };
