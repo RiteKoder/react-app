@@ -9,6 +9,11 @@ function ArrayDestruct() {
     textInput
       ? setMovies((m) => [...m, textInput])
       : console.log("Enter some value");
+    setTextInput("");
+  };
+
+  const handleDeleteMovie = (indexOfMovie) => {
+    setMovies((movies) => movies.filter((_, index) => index !== indexOfMovie));
   };
 
   return (
@@ -16,7 +21,11 @@ function ArrayDestruct() {
       <h1>My Favourite Movies</h1>
       <ul>
         {movies.map((movie, index) => {
-          return <li key={index}>{movie}</li>;
+          return (
+            <li key={index} onClick={() => handleDeleteMovie(index)}>
+              {movie}
+            </li>
+          );
         })}
       </ul>
       <form onSubmit={handleAddMovie}>
@@ -30,7 +39,7 @@ function ArrayDestruct() {
         />
         <button>Submit</button>
       </form>
-      {!textInput && <p>Enter Some Movie</p>} 
+      {!textInput && <p>Enter Some Movie</p>}
       {/* Sometimes i surprise myself 
       the above code displays the text is there is no Input */}
     </>
